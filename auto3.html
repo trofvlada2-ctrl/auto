@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Опитування</title>
+  </head>
+  <body>
+    <h2>Опитування для студентів</h2>
+    <form action="survey" method="post">
+      <fieldset>
+        <legend>1 Ваш рівень в HTML</legend>
+        <div>
+          <input type="radio" id="beginner" name="beginner" />
+          <label for="beginner">Початківець</label>
+        </div>
+        <div>
+          <input type="radio" id="middle" name="beginner" />
+          <label for="middle">Середній</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2 Формат навчання</legend>
+        <div>
+          <input type="radio" id="format" name="format" />
+          <label for="format">Онлайн</label>
+        </div>
+        <div>
+          <input type="radio" id="form" name="format" />
+          <label for="form">Офлайн</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Готовність до складних завдань</legend>
+        <div>
+          <input type="radio" id="ready" name="ready" />
+          <label for="ready">Готовий/а на всі 100%</label>
+        </div>
+
+        <div>
+          <input type="radio" id="notso" name="ready" />
+          <label for="notso">Потрібен час</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Напрями , які вас цікавлять</legend>
+        <div>
+          <input type="checkbox" id="first" name="path" />
+          <label for="first">Java</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="path" name="path" />
+          <label for="path">СSS</label>
+        </div>
+      </fieldset>
+      <label for="user-city">Оберіть ваше місто</label>
+      <select id="user-city" name="city">
+        <optgroup label="Україна">
+          <option value="Kiev">Київ</option>
+          <option value=" Lviv">Львів</option>
+          <option value=" Ternopil">Тернопіоь</option>
+        </optgroup>
+
+        <optgroup label="Europa">
+          <option value="Berlin">Берлін</option>
+          <option value="Warsaw">Варшава</option>
+        </optgroup>
+      </select>
+
+      <button type="submit">Надіслати дані</button>
+    </form>
+  </body>
+</html>

@@ -14,7 +14,8 @@
           id="nick"
           name="nickname"
           required
-          maxlength="3-20"
+          maxlength="3"
+          maxlength="20"
         />
       </div>
 
@@ -25,24 +26,24 @@
 
       <div>
         <label for="tel">Телефон</label>
-        <input type="tel" id="tel" name="tel" pattern="" />
+        <input type="tel" id="tel" name="tel" pattern="^\+380\d{9}$" />
       </div>
 
       <div>
         <label for="pass">Пароль</label>
-        <input type="password" id="pass" name="pass" required max="8" />
+        <input type="password" id="pass" name="pass" required minlength="8" />
       </div>
 
       <div>
         <label for="age">Вік(16-99) років</label>
-        <input type="number" id="age" name="age" required />
+        <input type="number" id="age" name="age" required min="16" max="99" />
       </div>
 
       <div>
         <label for="terms">Я погоджуюся з умовами використання</label>
         <input type="checkbox" id="terms" name="terms" required />
       </div>
-      <button type="button">Зареєструватись</button>
+      <button type="submit">Зареєструватись</button>
     </form>
   </body>
 </html>
