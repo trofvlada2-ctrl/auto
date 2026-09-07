@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="register" method="post">
+      <div>
+        <label for="nick">Ваш нікнейм</label>
+        <input
+          type="text"
+          id="nick"
+          name="nickname"
+          required
+          maxlength="3-20"
+        />
+      </div>
+
+      <div>
+        <label for="email">Ваша пошта</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="tel">Телефон</label>
+        <input type="tel" id="tel" name="tel" pattern="" />
+      </div>
+
+      <div>
+        <label for="pass">Пароль</label>
+        <input type="password" id="pass" name="pass" required max="8" />
+      </div>
+
+      <div>
+        <label for="age">Вік(16-99) років</label>
+        <input type="number" id="age" name="age" required />
+      </div>
+
+      <div>
+        <label for="terms">Я погоджуюся з умовами використання</label>
+        <input type="checkbox" id="terms" name="terms" required />
+      </div>
+      <button type="button">Зареєструватись</button>
+    </form>
+  </body>
+</html>
