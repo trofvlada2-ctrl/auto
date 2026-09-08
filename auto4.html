@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма з помилками</title>
+  </head>
+  <body>
+    <form action="/submit" method="get">
+      <!-- Поле 1  - помилка label for-->
+      <div>
+        <label>Ім'я користувача:</label>
+        <input type="text" id="username" name="username" />
+      </div>
+
+      <!-- Поле 2  немає LABEL , без ньго простір для тексту зникне + буде неяскаво вираженим
+         + тип - email . Це додасть @-->
+      <div>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Введіть ваш email"
+        />
+      </div>
+
+      <!-- Поле 3  замість  disabled - readonly , користувач не редагуватиме, однак
+         здійсниться відправка на сервер. Не вистачає в інпуті нейм-->
+      <div>
+        <label for="user-role">Роль у системі:</label>
+        <input type="text" id="user-role" disabled value="student" />
+      </div>
+
+      <!-- Блок 4: Радіокнопки  тут різний name. Якщо будуть різними,
+         то дозволить обрати длеуілька одночасно. Також розмітка <p> не згрупує
+            блоки. Треба <fieldset> <legend> з заголовком.-->
+      <div>
+        <p>Оберіть тарифний план:</p>
+
+        <input type="radio" id="plan-free" name="plan_free" value="free" />
+        <label for="plan-free">Безкоштовний</label>
+
+        <input type="radio" id="plan-pro" name="plan_pro" value="pro" />
+        <label for="plan-pro">Преміум</label>
+      </div>
+
+      <!-- Кнопка тип кнопки - submit потрібен, щоб кнопка не була дефолтною+
+         відправляє дані на сервер.-->
+      <br />
+      <button>Зареєструватися</button>
+    </form>
+  </body>
+</html>
