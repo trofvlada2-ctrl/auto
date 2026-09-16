@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sibling {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.siblings-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.parent {
+  background-color: #f0f0f0;
+
+  padding-top: 1px;
+}
+.child {
+  margin-top: 40px;
+}
+
+.empty {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  border-top: 1px solid transparent;
+}
