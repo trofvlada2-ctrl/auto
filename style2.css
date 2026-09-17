@@ -1,0 +1,10 @@
+.box-display {
+  display: none;
+}
+
+.box-visibility {
+  visibillity: hidden;
+}
+.box-opacity {
+  opacity: 0;
+}
